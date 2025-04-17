@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application for Uchiha Clan - Train under Legend Madara</title>
+</head>
+<body>
+    <h1><b>Event Registration</b></h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Fullname" placeholder="Enter your name here"><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="Email" name="Email"placeholder="like xyz.xyz1@gmail.com "><br><br>
+
+        <label for="tel">Phone:</label>
+        <input type="tel" id="PhoneNumber" name="PhoneNumber"><br><br>
+
+        <label for="OccupationType">Occupation:</label>
+        <select id="OccupationType" name="OccupationType" size="3">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Topic Of Interest</legend>
+            <label for="front">Frontend</label>
+            <input type="checkbox" name="checkbox" id="front">
+
+            <label for="ml">Machine Learning</label>
+            <input type="checkbox" name="checkbox" id="ml">
+
+            <label for="back">Backend</label>
+            <input type="checkbox" name="checkbox" id="back">
+        </fieldset><br>
+
+        <label for="textarea1">Comment:</label>
+        <br>
+        <textarea name="textarea1"id="textarea1" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <label>Languages Known:</label><br>
+        <input type="checkbox" id="english" name="Lang">
+        <label for="english">English</label>
+        <input type="checkbox" id="hindi" name="Lang">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="german" name="Lang">
+        <label for="german">German</label><br>
+
+        <label for="date">DOB:</label>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="file">Upload Resume (optional):</label>
+        <input type="file" id="file"><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
