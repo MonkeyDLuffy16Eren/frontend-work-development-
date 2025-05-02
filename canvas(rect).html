@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color:blueviolet !important;
+            text-align:center;
+            font-size:30px;
+        }
+         h1{
+            color:green;
+
+         }
+    </style>
+</head>
+<body>
+    <p>Canvas building</p>
+    <h1>This is how canvas works</h1>
+
+    <canvas id="myCanvas" width="200" height="100"style="border:1px solid #cb0000;"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw a blue rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 150, 50);
+        
+        // Draw a red circle
+        ctx.beginPath();
+        ctx.arc(100,10,30,0, Math.PI * 2);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        ctx.stroke();
+        
+
+
+    </script>
+    
+</body>
+</html>  
